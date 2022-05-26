@@ -1,39 +1,77 @@
+* {
+  user-select: none;
+  font-family: monospace, sans-serif;
+
+}
+
 p {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: #2b2b2b 0px 0px 1px;
+  font-size: 20px;
+
 }
 
 body {
-  overflow-x: hidden;
+  background-color: #141516;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
 .foto-perfil {
-  height: 100%;
-  max-width: auto;
+  width: 200px;
   border-radius: 50%;
   color: white;
   text-transform: uppercase;
-  margin: 50px 0;
-  border-bottom: 5px ridge #17a2b8;
+  margin: 40px 0;
+  box-shadow: 150px 290px 250px 220px #532cc7;
+  border: rgb(255, 255, 255) solid 2px;
 }
 
 .icones {
-  padding-left: 5px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.icones img {
+  width: 48px;
+  height: 48px;
 }
 
 .navbar {
   background-color: #2b2b2b;
   color: white;
-  font-weight: bold
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  box-shadow: 1px 5px 5px rgb(0, 0, 0);
 }
+
 
 .navbar-brand {
   color: white !important;
-
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
   font-size: 1.5em;
-
   font-weight: bold;
 }
 
@@ -41,61 +79,37 @@ body {
   color: white;
   margin-right: 10px;
   align-content: center;
-  padding: 5px 5px;
+  padding: 15px 15px;
   margin-right: 15px;
   cursor: pointer;
   justify-content: center;
-  background-color: #17a2b800;
-  border: 5px dashed #17a2b8;
 
   font-size: 1.5em;
   font-weight: bold;
 
-  transition: all 0.6s;
+  transition: ea 0.6s;
 
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border-bottom: 15px ridge #fff;
-
+  border-bottom: 5px ridge #532cc7;
   border-radius: 10px;
-  font-size: 45px;
+  background-color: #2b2b2b;
 }
 
 .fab:hover {
-  background-color: #17a2b8;
-  transform: scale(1.2);
-  ;
+
   margin-right: 15px;
   cursor: pointer;
 
-  transition: all 0.6s;
-
-
+  transition: all 0.3s;
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border-bottom: 15px ridge #17a2b8;
-
-
-
+  border-bottom: 5px ridge #17a2b8;
   border-radius: 10px;
-}
-
-.titulos {
-  text-decoration: underline;
-  text-underline-position: under;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #17a2b8;
-  text-align: center;
-}
-
-.paragrafoBrancos {
-  color: white !important;
 }
 
 .jumbotron {
   background-color: #2b2b2b;
   color: white;
-  padding: 20px;
+  padding: 30px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: flex;
@@ -104,10 +118,8 @@ body {
   font-weight: bold;
   font-size: 1.5em;
   border-radius: 0;
-  
-
-
-
+  width: 100vw;
+  height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -120,7 +132,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
   .jumbotron {
     text-align: center;
     display: inline-block;
@@ -129,16 +141,10 @@ body {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .body {
-    overflow: visible;
-
-  }
-}
-
 span {
-  color: #00eaff;
+  color: #2cc7c7;
   font-weight: 700;
+
 
 }
 
@@ -159,7 +165,6 @@ form {
   font-weight: 700;
   font-size: 20px;
   padding-top: 15px;
-
 }
 
 .corPrimaria {
@@ -179,10 +184,6 @@ form {
   color: white;
 }
 
-.jumbotron {
-  background-color: #141516;
-}
-
 .links {
   padding: 5px 5px;
   cursor: pointer;
@@ -197,6 +198,7 @@ form {
   text-align: center;
 
   color: white !important;
+
 }
 
 .links:hover {
@@ -207,19 +209,17 @@ form {
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
 }
 
-.navbar {
-  background-color: #2b2b2b;
-  padding: 10px;
-  margin-bottom: 0px;
-  border-radius: 0 0 10px 10px;
-  border-bottom: 5px ridge #17a2b8;
-}
+
 
 .nav-link {
   color: white !important;
-  background-color: #17a2b8;
-  font-size: 20px;
-  margin: 0.2rem;
+
+  background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239, 95%, 70%, 1) 53%, hsla(236, 94%, 63%, 1) 75%);
+
+
+  font-size: 15px;
+  margin: 0.4rem;
+
 }
 
 .corSecundaria {
@@ -229,14 +229,24 @@ form {
 }
 
 footer {
-  background-color: #2b2b2b;
+  background-color: #141516;
   color: white;
   padding: 20px;
   margin-bottom: 0px;
   font-weight: bold;
+
+  box-shadow: 70px 30px 90px 60px #8289896d;
 }
-h2{
-  color:#17a2b8
+
+h1 {
+  font-weight: bold;
+  color: white;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+  color: #17a2b8
 }
 
 
@@ -247,16 +257,79 @@ h2{
 }
 
 #myBtn {
+  background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239, 95%, 70%, 1) 53%, hsla(236, 94%, 63%, 1) 75%);
   display: none;
   position: fixed;
-  bottom: 20px;
+  border: #ffffff solid 1px;
+  bottom: 15px;
   right: 30px;
   z-index: 99;
-  font-size: 48px;
-  border-radius: 10px;
+  font-size: 38px;
+  border-radius: 20px;
   outline: none;
   color: white;
   cursor: pointer;
   padding: 0 15px;
-  border-radius: 4px;
+  transition: ease-out 0.2s;
+}
+
+#myBtn:hover {
+  background-color: #17a2b8;
+  transform: scale(1.1);
+
+  color: white;
+  border: #2b2b2b solid 5px;
+}
+
+.carousel {
+  padding: 0px;
+  color: #17a2b8;
+  font-weight: 900;
+  border-bottom: #000 ridge 15px;
+  border-radius: 20px;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #141516;
+  box-shadow: 15px 15px 15px #000;
+  margin-right: 30px;
+  margin-top: 50px;
+
+}
+
+
+.botao {
+  background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239, 95%, 70%, 1) 53%, hsla(236, 94%, 63%, 1) 75%);
+
+  color: white;
+  width: 200px;
+  padding: 15px 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bold;
+
+  transition: all 0.6s;
+
+  border-radius: 10px;
+}
+
+.botao:hover {
+  background-color: #532cc7;
+  color: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.logo_img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }

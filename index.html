@@ -20,11 +20,15 @@
 
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/iconeroxo.png" type="image/x-icon">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
-        <a class="navbar-brand  " href="#topo">Portfolio </a>
+
+        <a class="navbar-brand " href="index.html">
+            <img src="img/iconeroxo.png" alt="logo do site" class=" logo_img ">
+            Portfolio </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,29 +38,53 @@
             <ul class="navbar-nav mr-auto">
             </ul>
             <ul class="navbar-nav">
-                <li><a href="/projetos.html" class="nav-link links" target="_blank"> Projetos</a></li>
+                <li><a href="/projetos.html" class="nav-link links" target="_blank">projetos</a></li>
                 <li>
-                    <a href="#" class="nav-link links" target="_blank">Sobre mim</a>
+                    <a href="#" class="nav-link links" target="_blank">certificados</a>
                 </li>
                 <li>
-                    <a href="/contato.html" class="nav-link links" target="_blank">Contato</a>
+                    <a href="/contato.html" class="nav-link links" target="_blank">contato</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section class="jumbotron">
-        <div class=" col-md-6">
+    <section class="jumbotron ">
+        <div class=" col-md-4 mr-3">
             <img src="img/ft.jpg" class="foto-perfil" alt="Responsive image">
             <h1 class="jumbotron-heading" style="color:white;text-transform: uppercase;">Vinicius Castro</h1>
-            <p class="lead" style="color:white !important;">{<span>Back-end Software Developer</span>}
+            <p class="">{<span>Software Developer</span>}
             </p>
+            <p class="">Olá meu nome é Vinicius, sou apaixonado por tecnologia e por programação.
+                Atualmente estou cursando Análise e desenvolvimento de sistemas na Faculdade Visconde de Cairú</p>
+                
+                principais tecnologias que eu estudo:
+            <ul class="icones ">
+                <li>
+                    <img src="img/java.png" alt="icone java">
+                </li>
+                <li>
+                    <img src="img/js.png" alt="icone javascript">
+                </li>
+                <li>
+                    <img src="img/php.png" alt="icone php">
+                </li>
+                <li>
+                    <img src="img/spring.png" alt="icone spring framework">
+                </li>
+                <li>
+                    <img src="img/bootstrap.png" alt="icone bootstrap">
+                </li>
+                <li>
+                    <img src="img/html.png" alt="icone html">
+                </li>
+                <li>
+                    <img src="img/css.png" alt="icone css">
+                </li>
+            </ul>
 
-            <p class="lead text-justify">Olá meu nome é Vinicius, sou apaixonado por tecnologia e por programação.
-                Meu interesse por tecnologia me levou a cursar Análise e
-                Desenvolvimento de Sistemas pela Faculdade Visconde de Cairú</p>
             <p>
-                <a href="#contato" class="btn btn-outline-light w-25">Contato</a>
+                <a href="#contato" class="btn botao">contato</a>
             </p>
             <a href="https://github.com/vinicgs" target="_blank"><i class="fab fa-github "></i></a>
             <a href="https://www.linkedin.com/in/--vinicius--castro/" target="_blank"><i
@@ -65,22 +93,24 @@
                     class="fab fa-whatsapp "></i></a>
         </div>
 
-        <div id="carouselExampleIndicators" class=" carousel slide mt-5 " data-ride="carousel">
-            <h2 class="text-center">Meus Projetos</h2>
+        <div id="carouselExampleIndicators" class="carousel col-md-6 " data-ride="carousel">
+            <h2 class="text-center p-1">Alguns projetos desenvolvidos</h2>
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active ">
                     <img class="d-block w-100" src="img/dsmovie.png" alt="First slide">
+                    <div class="carousel-caption ">
+                    </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/rfood.png" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="#" alt="Third slide">
+                    <img class="d-block w-100" src="img/sorteadorjs.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,20 +122,17 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        </div>
+    </section>
+    <section>
+
     </section>
 
     <footer class="page-footer font-small">
-
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
-            <!-- Grid row -->
             <div class="row">
-                <!-- Grid column -->
                 <div class="col-md-3 mx-auto">
-                    <!-- Links -->
                     <h5 class="font-weight-bold text-uppercase text-info">Links</h5>
-
                     <ul class="list-unstyled">
                         <li>
                             <a href="/projetos.html" class="text-light">Projetos</a>
@@ -118,15 +145,8 @@
                         </li>
                     </ul>
                 </div>
-                <!-- Grid column -->
-
-
-
-                <!-- Grid column -->
                 <div class="col-md-3 mx-auto">
-                    <!-- Links -->
                     <h5 class="font-weight-bold text-uppercase text-info">Links</h5>
-
                     <ul class="list-unstyled">
                         <li>
                             <a href="" class="text-light">GitHub</a>
@@ -142,11 +162,9 @@
             </div>
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top" class=" btn btn-outline-warning">↑</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class=" btn badge-dark">↑</button>
 
-
-
+        <script src="js/script.js"></script>
 </body>
-
 
 </html>
