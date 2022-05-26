@@ -24,11 +24,9 @@ body {
 .foto-perfil {
   width: 200px;
   border-radius: 50%;
-  color: white;
-  text-transform: uppercase;
   margin: 40px 0;
-  box-shadow: 150px 290px 250px 220px #532cc7;
-  border: rgb(255, 255, 255) solid 2px;
+  box-shadow: 20px 13px 250px 220px #532cc7;
+  border: #17a2b8 solid 5px;
 }
 
 .icones {
@@ -39,24 +37,27 @@ body {
   justify-content: space-around;
   align-items: center;
 
-  margin: 0;
-  padding: 0;
+  padding: 0!important;
   margin-top: 10px;
 
   margin-bottom: 10px;
-  padding: 5px;
-  border-radius: 50%;
   color: #fff;
   font-size: 20px;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
+  flex-wrap: wrap ;
+  border-radius: 20px;
+
 
 }
 
 .icones img {
   width: 48px;
   height: 48px;
+  margin: 0;
+  padding: 0;
+  
 }
 
 .navbar {
@@ -64,7 +65,6 @@ body {
   color: white;
   font-weight: bold;
   font-size: 16px;
-  padding: 0;
   box-shadow: 1px 5px 5px rgb(0, 0, 0);
 }
 
@@ -77,10 +77,9 @@ body {
 
 .fab {
   color: white;
-  margin-right: 10px;
   align-content: center;
-  padding: 15px 15px;
-  margin-right: 15px;
+  padding: 10px;
+  margin: 25px 0;
   cursor: pointer;
   justify-content: center;
 
@@ -90,14 +89,12 @@ body {
   transition: ea 0.6s;
 
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border-bottom: 5px ridge #532cc7;
+  border-bottom: 1px solid #532cc7;
   border-radius: 10px;
   background-color: #2b2b2b;
 }
 
 .fab:hover {
-
-  margin-right: 15px;
   cursor: pointer;
 
   transition: all 0.3s;
@@ -109,7 +106,6 @@ body {
 .jumbotron {
   background-color: #2b2b2b;
   color: white;
-  padding: 30px;
   margin-top: 20px;
   margin-bottom: 0px;
   display: flex;
@@ -119,7 +115,6 @@ body {
   font-size: 1.5em;
   border-radius: 0;
   width: 100vw;
-  height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -160,24 +155,28 @@ p {
   color: white !important;
 }
 
-form {
-  color: white !important;
-  font-weight: 700;
-  font-size: 20px;
-  padding-top: 15px;
-}
 
 .corPrimaria {
   background-color: #141516;
 }
 
-#contato {
-  margin-top: 200px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
 
+.formulario {
+  background-color: #141516;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 0;
+  width: 100vw;
+
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+
 }
 
 .itemMenu {
@@ -185,11 +184,11 @@ form {
 }
 
 .links {
-  padding: 5px 5px;
+  padding: 10px 0 ;
   cursor: pointer;
   margin-left: 15px;
 
-  transition: all 0.6s;
+  transition: all 0.1s;
 
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
 
@@ -206,16 +205,14 @@ form {
 
   cursor: pointer;
 
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+  box-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
 
 
 
 .nav-link {
   color: white !important;
-
   background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239, 95%, 70%, 1) 53%, hsla(236, 94%, 63%, 1) 75%);
-
 
   font-size: 15px;
   margin: 0.4rem;
@@ -231,18 +228,37 @@ form {
 footer {
   background-color: #141516;
   color: white;
-  padding: 20px;
-  margin-bottom: 0px;
+  padding: 10px;
   font-weight: bold;
+  font-size: 1em;
+}
 
-  box-shadow: 70px 30px 90px 60px #8289896d;
+.footer_links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  flex-wrap: wrap ;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+textarea{
+  resize: none;
+  width: 100%;
+  height: 200px;
 }
 
 h1 {
   font-weight: bold;
   color: white;
 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
@@ -282,54 +298,54 @@ h2 {
 }
 
 .carousel {
-  padding: 0px;
+  padding: 0;
   color: #17a2b8;
   font-weight: 900;
-  border-bottom: #000 ridge 15px;
-  border-radius: 20px;
+  border-bottom: 15px ridge #4954f9;
+    border-radius: 20px;
   justify-content: center;
   align-content: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+
+  box-shadow: 10px 10px 25px rgb(0, 0, 0);
 
   background-color: #141516;
-  box-shadow: 15px 15px 15px #000;
-  margin-right: 30px;
-  margin-top: 50px;
+  margin: 20px 0 ;
 
 }
 
 
 .botao {
-  background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239, 95%, 70%, 1) 53%, hsla(236, 94%, 63%, 1) 75%);
-
+background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239, 95%, 70%, 1) 53%, hsla(236, 94%, 63%, 1) 75%);
+  font-size: 38px;
+  border-radius: 20px;
   color: white;
-  width: 200px;
-  padding: 15px 5px;
-  margin-right: 15px;
   cursor: pointer;
-  justify-content: center;
-  font-size: 1em;
-  font-weight: bold;
+  padding: 0 15px;
+  transition: ease-out 0.2s;
 
-  transition: all 0.6s;
+  box-shadow: 2px 5px 5px rgb(0 0 0)
 
-  border-radius: 10px;
 }
 
 .botao:hover {
-  background-color: #532cc7;
-  color: #fff;
-  margin-right: 15px;
-  cursor: pointer;
+  background-color: #17a2b8;
   transform: scale(1.1);
-  transition: all 0.3s;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border-radius: 10px;
+  
+  color: white;
+    
 }
 
 .logo_img {
   width: 40px;
   height: 40px;
+  margin: 5px;
+}
+
+.icones p {
+  color: #17a2b8;
+  font-size: 13px;
+  font-weight: bold;
   margin: 5px;
 }

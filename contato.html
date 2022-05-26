@@ -20,11 +20,15 @@
 
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/iconeroxo.png" type="image/x-icon">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
-        <a class="navbar-brand " href="#topo">Portfolio </a>
+
+        <a class="navbar-brand " href="index.html">
+            <img src="img/iconeroxo.png" alt="logo do site" class=" logo_img ">
+            Portfolio </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,64 +38,138 @@
             <ul class="navbar-nav mr-auto">
             </ul>
             <ul class="navbar-nav">
+                <li><a href="projetos.html" class="nav-link links">projetos</a></li>
                 <li>
-                    <a href="/projetos.html" class="nav-link links"> Projetos</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link links">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link links">Contato</a>
+                    <a href="contato.html" class="nav-link links">contato</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section Id="contato" class="corPrimaria p-5 mt-5 col-md-12">
-        <div class="">
-            <div class="container">
-                <h2 class="jumbotron-heading titulos">Contato</h2>
-                <form action="">
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Nome</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Mensagem</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                Projeto Web
-                            </label>
+    <main class="formulario">
+
+
+        <section class="mt-5">
+            <h2 class="h1-responsive font-weight-bold text-center my-4 ">Me mande uma mensagem!!</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Caso queira me contratar, caso tenha alguma dúvida,
+                sugestão ou elogio, fale comigo!
+            </p>
+            </p>
+            <div class="row">
+                <div class="col-md-9 mb-md-0 mb-5 p-5">
+                    <form id="contact-form" name="contact-form" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="nome" class="">Nome</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
-                                Projeto Mobile
-                            </label>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <label for="mensagem">Mensagem</label>
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary links">Enviar</button>
-                </form>
-    </section>
+                        <div class="col-md-12">
+                            <div class="md-form" >
+                                <label for="message">Qual o seu interesse?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Contratar
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Dúvida
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                        id="exampleRadios3" value="option3">
+                                    <label class="form-check-label" for="exampleRadios3">
+                                        Elogio
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                    <label class="custom-control-label" for="customControlInline">Confirmo que não sou
+                                        robô ou hacker</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary p-2 mt-4" href="mailto:contato@afonsomadeira.com" target="_blank">Enviar</a>
+                        </div>
+                    </form>
+                 </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class=" btn btn-info">↑</button>
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Av. Milton Santos, Ondina </p>
+                        </li>
 
-    <footer>
-        <p>Copyright Vinicius 2022®
-        </p>
-    </footer>
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>71 98464 0504</p>
+                        </li>
 
-    <script src="js/script.js"></script>
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>viniciuscastrogs@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer ">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class=" ">
+                <div class="col-md-6 d-flex m-2">
+                    <ul class="list-unstyled footer_links ">
+                        <li>
+                            <a href="contato.html" class="text-light ">Contato</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/vinicgs" class="text-light" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/--vinicius--castro/" class="text-light"
+                                target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com/send?phone=5571984640504" class="text-light"
+                                target="_blank">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class=" btn badge-dark">↑</button>
+
+        <script src="js/script.js"></script>
 </body>
 
 </html>
