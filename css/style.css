@@ -1,7 +1,12 @@
 * {
   user-select: none;
   font-family: monospace, sans-serif;
+  
 
+}
+
+a{
+  text-decoration: none!important;
 }
 
 p {
@@ -348,4 +353,16 @@ background: -webkit-linear-gradient(307deg, hsla(246, 98%, 76%, 1) 26%, hsla(239
   font-size: 13px;
   font-weight: bold;
   margin: 5px;
+}
+
+#projetos {
+  margin-top:250px ;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  flex-wrap: wrap;
+
 }

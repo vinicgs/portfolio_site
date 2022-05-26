@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vinicius - Projetos</title>
+    <title>Projetos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -21,11 +20,15 @@
 
     <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/iconeroxo.png" type="image/x-icon">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-xl fixed-top navbar-dark" >
-        <a class="navbar-brand " href="/index.html">Portfolio </a>
+    <nav class="navbar navbar-expand-xl fixed-top navbar-dark">
+
+        <a class="navbar-brand " href="index.html">
+            <img src="img/iconeroxo.png" alt="logo do site" class=" logo_img ">
+            Portfolio </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
             aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,34 +36,30 @@
 
         <div class="collapse navbar-collapse" id="navbarsExample04">
             <ul class="navbar-nav mr-auto">
-
             </ul>
             <ul class="navbar-nav">
+                <li><a href="projetos.html" class="nav-link links">projetos</a></li>
                 <li>
-                    <a href="/projetos.html" class="nav-link links"> Projetos</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link links">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="#contato" class="nav-link links">Contato</a>
+                    <a href="contato.html" class="nav-link links">contato</a>
                 </li>
             </ul>
         </div>
-    </nav>    
+    </nav>
 
-<div class="album" id="projetos">
-        <div class="container">
-            <h2 class="text-center jumbotron-heading titulos">Projetos</h2>
-            <div class="row">
-                <div class="col-md-6">
+   
+
+    <div class="album mt-5 text-dark" id="projetos">
+        <div class="container bg">
+            <h2 class="text-center jumbotron-heading titulos mt-5 ">Projetos</h2>
+            <div class="row mt-5">
+                <div class="col-md-4">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="img/dsmovie.png" data-holder-rendered="true"
                             style="height: 225px; width: 100%;max-width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
+                            <p class="card-text text-dark">Projeto de um site de avaliação de filmes com Java, Springboot e React.
                             </p>
                             <ul>
                                 <li>Java / Springboot </li>
@@ -70,34 +69,77 @@
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+                                    <button type="button"  class="btn btn-sm btn-outline-success" >
+                                        <a href="https://dsmovie-v.netlify.app/" target="_blank">
+                                        Ver Projeto</button>
+                                        </a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a href="https://github.com/vinicgs/dsmovie" target="_blank">
+                                        Ver Código</button>
+                                        </a>
                                 </div>
                                 <small class="text-muted">Projeto Web</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-5">
+                <div class="col-md-4 mb-5">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top"
                             data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
                             alt="Thumbnail [100%x225]" src="img/rfood.png" data-holder-rendered="true"
                             style="height: 225px; width: 100%; display: block;">
                         <div class="card-body">
-                            <p class="card-text">Esse é um projeto que eu desenvolvi usando as tecnologias A, B, C e D.
+                            <p class="card-text text-dark">Projeto feito para estudar consumo de API com React e Bootstrap. 
                             </p>
                             <ul>
+                                <li>Javascript</li>
                                 <li>React</li>
-                                <li>Bootstrap</li>
-                                <li></li>
+                                <li>Bootstrap</li>                                
                             </ul>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-success">Ver Projeto</button>
-                                    <button type="button" class="btn btn-sm btn-outline-primary">Ver Código</button>
+                                    <button type="button" class="btn btn-sm btn-outline-success">
+                                        <a href="https://react-food-five.vercel.app/" target="_blank">
+                                        Ver Projeto</button>
+                                        </a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a href="https://github.com/vinicgs/react_food" target="_blank">
+                                        Ver Código</button>
+                                        </a>
                                 </div>
-                                <small class="text-muted">Projeto Mobile</small>
+                                <small class="text-muted">Projeto Web</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-5">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="img/sorteadorjs.png" data-holder-rendered="true"
+                            style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text text-dark">Projeto Criado utilizando Javascript, para criar sorteios utilizando funções.
+                            </p>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-success">
+                                        <a href="https://vinicgs.github.io/sorteadorjs/" target="_blank">
+                                        Ver Projeto</button>
+                                        </a>
+                                    <button type="button" class="btn btn-sm btn-outline-primary">
+                                        <a href="https://sorteador-js.vercel.app/" target="_blank">
+                                        Ver Código</button>
+                                        </a>
+                                </div>
+                                <small class="text-muted">Projeto Web</small>
                             </div>
                         </div>
                     </div>
@@ -106,4 +148,39 @@
         </div>
     </div>
 
-    </body>
+    
+
+ 
+
+
+    <footer class="page-footer ">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <div class=" ">
+                <div class="col-md-6 d-flex m-2">
+                    <ul class="list-unstyled footer_links ">
+                        <li>
+                            <a href="contato.html" class="text-light ">Contato</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/vinicgs" class="text-light" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/--vinicius--castro/" class="text-light"
+                                target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://web.whatsapp.com/send?phone=5571984640504" class="text-light"
+                                target="_blank">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top" class=" btn badge-dark">↑</button>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
