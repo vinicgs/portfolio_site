@@ -1,8 +1,6 @@
 * {
   user-select: none;
   font-family: monospace, sans-serif;
-
-
 }
 
 a {
@@ -12,7 +10,6 @@ a {
 p {
   text-shadow: #2b2b2b 0px 0px 1px;
   font-size: 20px;
-
 }
 
 body {
@@ -53,8 +50,6 @@ body {
   text-transform: uppercase;
   flex-wrap: wrap;
   border-radius: 20px;
-
-
 }
 
 .icones img {
@@ -62,7 +57,6 @@ body {
   height: 48px;
   margin: 0;
   padding: 0;
-
 }
 
 .navbar {
@@ -72,7 +66,6 @@ body {
   font-size: 16px;
   box-shadow: 1px 5px 5px rgb(0, 0, 0);
 }
-
 
 .navbar-brand {
   color: white !important;
@@ -125,7 +118,6 @@ body {
 
 @media screen and (max-width: 600px) {
   .jumbotron {
-
     text-align: center;
     display: inline-block;
     align-items: center;
@@ -145,8 +137,6 @@ body {
 span {
   color: #2cc7c7;
   font-weight: 700;
-
-
 }
 
 html {
@@ -161,11 +151,9 @@ p {
   color: white !important;
 }
 
-
 .corPrimaria {
   background-color: #141516;
 }
-
 
 .formulario {
   background-color: #141516;
@@ -182,6 +170,7 @@ p {
 
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
 
+  
 
 }
 
@@ -213,8 +202,6 @@ p {
 
   box-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
-
-
 
 .nav-link {
   color: white !important;
@@ -271,7 +258,6 @@ h2 {
   color: #17a2b8
 }
 
-
 .cartao {
   height: 225px;
   width: 100%;
@@ -326,7 +312,7 @@ h2 {
   color: white;
   align-content: center;
   padding: 10px;
-  margin:25px 0;
+  margin: 25px 0;
   cursor: pointer;
   justify-content: center;
   width: 250px;
@@ -345,9 +331,9 @@ h2 {
 
 .botao:hover {
 
-    transform: scale(1.1);
-  
-    color: white;
+  transform: scale(1.1);
+
+  color: white;
   border-bottom: 5px solid #17a2b8;
 
 }
@@ -374,5 +360,9 @@ h2 {
 
   align-items: center;
   flex-wrap: wrap;
+
+  
+
+  
 
 }
