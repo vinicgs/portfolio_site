@@ -313,7 +313,7 @@ h2 {
   color: #17a2b8;
   font-weight: 900;
   border-bottom: 15px ridge #4954f9;
-  border-radius: 20px;
+  border-radius: 10px;
   justify-content: center;
   align-content: center;
   justify-content: center;
@@ -322,7 +322,7 @@ h2 {
   box-shadow: 10px 10px 25px rgb(0, 0, 0);
 
   background-color: #141516;
-  margin: 20px 0;
+
 
 }
 
