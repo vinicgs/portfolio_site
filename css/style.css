@@ -1,6 +1,8 @@
 * {
+  font-family: 'League Spartan', sans-serif;
+  font: 1em sans-serif;
+  font-weight: 700 !important;
   user-select: none;
-  font-family: monospace, sans-serif;
 }
 
 a {
@@ -10,26 +12,29 @@ a {
 p {
   text-shadow: #2b2b2b 0px 0px 1px;
   font-size: 20px;
+  font-weight: bolder;
+  word-spacing: 0.08em;
+  letter-spacing: 0.05em;
+
 }
 
 body {
   background-color: #141516;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 700;
   margin: 0;
   padding: 0;
-  width: 100%;
-  
+
 }
 
 .foto-perfil {
   width: 200px;
   border-radius: 50%;
   margin: 40px 0;
-  box-shadow: 20px 13px 350px 280px #532cc7;
-  border: #17a2b8 solid 5px;
+  box-shadow: 12px 15px 150px 200px #532cc7;
+
+  background-color: #fff;
 }
 
 .icones {
@@ -41,9 +46,7 @@ body {
   align-items: center;
 
   padding: 0 !important;
-  margin-top: 10px;
-
-  margin-bottom: 10px;
+  margin: 10px;
   color: #fff;
   font-size: 20px;
   font-weight: 300;
@@ -70,21 +73,22 @@ body {
 
 
 .projetos-title {
-    box-shadow: 20px 13px 250px 220px #532cc7;
-    border-radius: 10px;
-    width: 180px;
-    margin: 0 auto;
-    padding:10px;
-    background-color: #532cc7;
-    font-weight: 900;
+  box-shadow: 20px 13px 250px 220px #532cc7;
+  border-radius: 10px;
+  width: 180px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #532cc7;
+  font-weight: 900;
 }
+
 .form-title {
   box-shadow: 20px 13px 250px 220px #532cc7;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #532cc7;
-    font-weight: 900;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #532cc7;
+  font-weight: 900;
 }
 
 .navbar-brand {
@@ -93,33 +97,31 @@ body {
   font-weight: bold;
 }
 
+
 .fab {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #532cc7;
+
   color: white;
-  align-content: center;
-  padding: 10px;
-  margin: 25px 0;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 20px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  box-shadow: 2px 1px 35px 8px #532cc7;
+
   cursor: pointer;
-  justify-content: center;
-  width: 100px;
 
-  font-size: 1.5em;
-  font-weight: bold;
-
-  transition: ea 0.6s;
-
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border-bottom: 5px solid #532cc7;
-  border-radius: 10px;
-  background-color: #2b2b2b;
 }
 
 .fab:hover {
-  cursor: pointer;
+  transform: scale(1.3);
 
-  transition: all 0.3s;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0);
-  border-bottom: 5px ridge #17a2b8;
-  border-radius: 10px;
+  transition: 0.2s;
+
+  cursor: pointer;
 }
 
 .jumbotron {
@@ -190,7 +192,6 @@ p {
   width: 100vw;
 
   box-shadow: 1px 1px 5px rgb(0, 0, 0);
-
 }
 
 .itemMenu {
@@ -228,7 +229,6 @@ p {
 
   font-size: 15px;
   margin: 0.4rem;
-
 }
 
 .corSecundaria {
@@ -268,8 +268,13 @@ textarea {
 }
 
 h1 {
+  /* title text */
+  font-style: monospace !important;
   font-weight: bold;
-  color: white;
+  font-size: 1em;
+  color: #2cc7c7;
+  text-transform: uppercase;
+  text-shadow: 2px 3px 3px #2cc7c7;
 
 }
 
@@ -322,8 +327,6 @@ h2 {
   box-shadow: 10px 10px 25px rgb(0, 0, 0);
 
   background-color: #141516;
-
-
 }
 
 .botao {
@@ -348,9 +351,7 @@ h2 {
 }
 
 .botao:hover {
-
   transform: scale(1.1);
-
   color: white;
   border-bottom: 5px solid #17a2b8;
 
@@ -379,4 +380,36 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 
+}
+
+
+.wrapper-div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.demo {
+  width: 21ch;
+  animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace !important;
+  font-size: 0.7em;
+  color: #17a2b8;
+  text-shadow: 5px 5px 2px #2b2b2b;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
